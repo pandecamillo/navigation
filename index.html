@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Responsive navbar</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div onclick="goToWhatsapp()" class="logo">
+          <img src="me.jpg" alt="mon-logo" width="50" />
+          <p>Camillo Pande</p>
+        </div>
+        <img style="display: none" src="close" alt="close" />
+        <img
+          id="menu"
+          onclick="handleNav()"
+          src="menu.png"
+          alt="menu"
+          class="menu"
+          width="30"
+          height="30"
+        />
+      </div>
+      <nav class="navigation" id="nav">
+        <a href="#intro">Introduction</a>
+        <a href="#dev">Developpement</a>
+        <a href="#con">Conclusion</a>
+      </nav>
+    </header>
+    <main>
+      <section id="intro"><h1>INTRODUCTION</h1></section>
+      <section id="dev"><h1>DEVELOPPEMENT</h1></section>
+      <section id="con"><h1>CONCLUSION</h1></section>
+    </main>
+  </body>
+</html>
