@@ -1,13 +1,14 @@
-let showing = false;
+let active = false;
 function handleNav() {
-  if (showing) {
-    menu.src = "close.png";
-    nav.classList.add("showNav");
-  } else {
-    menu.src = "menu.png";
+  if (active) {
     nav.classList.remove("showNav");
+    menu.src = "menu.png";
+    active = false;
+  } else {
+    nav.classList.add("showNav");
+    menu.src = "close.png";
+    active = true;
   }
-  showing = !showing;
 }
 
 document.onscroll = function () {
