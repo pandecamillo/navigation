@@ -16,6 +16,6 @@ document.onscroll = function () {
   nav.classList.remove("showNav");
 };
 
-function goToWhatsapp() {
-  location.href = "https://wa.me/+243893196755";
+function goToWebsite() {
+  location.href = "https://camilllopande.onrender.com";
 }
